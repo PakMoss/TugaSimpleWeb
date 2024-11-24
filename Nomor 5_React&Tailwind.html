@@ -1,0 +1,75 @@
+<html>
+<head>
+    <title>OpenData Banyuajuh</title>
+    <script src="https://unpkg.com/react/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        function App() {
+            return (
+                <div>
+                    <header className="bg-green-500 text-white p-4 flex justify-between items-center">
+                        <div className="text-lg font-bold">OpenData Banyuajuh</div>
+                        <nav>
+                            <ul className="flex space-x-4">
+                                <li><a href="#" className="hover:underline">Beranda</a></li>
+                                <li><a href="#" className="hover:underline">Data Desa</a></li>
+                                <li><a href="#" className="hover:underline">Dokumen Desa</a></li>
+                                <li><a href="#" className="hover:underline">Berita</a></li>
+                                <li><a href="#" className="hover:underline">Tentang</a></li>
+                            </ul>
+                        </nav>
+                    </header>
+                    <main className="bg-white p-8 text-center">
+                        <img src="https://placehold.co/150x150" alt="Illustration of a person with a folder and documents" className="mx-auto mb-4"/>
+                        <h1 className="text-2xl font-bold mb-2">Apa itu OpenData Banyuajuh?</h1>
+                        <p className="text-gray-700">
+                            OpenData Banyuajuh merupakan website atau platform untuk menyediakan data, berita, dan dokumen terkait desa. Tujuan utama dari website ini adalah untuk meningkatkan transparansi, efisiensi, dan aksesibilitas informasi desa. Selain itu, website ini juga mendukung pengembangan data yang lebih akurat.
+                        </p>
+                    </main>
+                    <footer className="bg-green-700 text-white p-8">
+                        <div className="flex justify-between">
+                            <div>
+                                <h2 className="text-lg font-bold">OpenData Banyuajuh</h2>
+                                <div className="mt-4">
+                                    <h3 className="font-semibold">Kontak kami</h3>
+                                    <p>data@banyuajuh.go.id</p>
+                                    <p>+6285452989052</p>
+                                </div>
+                                <div className="mt-4">
+                                    <h3 className="font-semibold">Alamat</h3>
+                                    <p>Jl. Kusuma Bangsa 12, Banyuajuh, Banyu Ajuh, Kec. Kamal</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 className="font-semibold">Ikuti kami</h3>
+                                <ul className="mt-4 space-y-2">
+                                    <li><a href="#" className="hover:underline"><i className="fab fa-instagram"></i> Instagram</a></li>
+                                    <li><a href="#" className="hover:underline"><i className="fab fa-facebook"></i> Facebook</a></li>
+                                    <li><a href="#" className="hover:underline"><i className="fab fa-twitter"></i> Twitter</a></li>
+                                    <li><a href="#" className="hover:underline"><i className="fab fa-medium"></i> Medium</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="text-center mt-8">
+                            <p>Copyright open data Banyuajuh 2024</p>
+                        </div>
+                    </footer>
+                </div>
+            );
+        }
+
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+</body>
+</html>
